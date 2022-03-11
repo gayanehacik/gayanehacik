@@ -1,4 +1,3 @@
-// README.md
 
 👩‍💻 I'm an Industrial Engineer & IT Recruitment Specialist
 <br>
