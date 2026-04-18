@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gayane Haçik | Portfolio</title>
+<title>Gayane Haçik | HR Systems & Analytics</title>
 
 <style>
 body{
@@ -21,8 +21,9 @@ nav{
   background:white;
   display:flex;
   justify-content:center;
-  gap:20px;
-  padding:15px;
+  flex-wrap:wrap;
+  gap:18px;
+  padding:14px;
   font-size:12px;
   letter-spacing:1px;
   border-bottom:1px solid #eee;
@@ -34,7 +35,7 @@ nav a{
   color:#333;
 }
 
-/* HERO */
+/* HERO (Wix-style split) */
 .hero{
   display:flex;
   justify-content:space-between;
@@ -57,7 +58,7 @@ nav a{
   color:#666;
   font-size:16px;
   line-height:1.6;
-  max-width:400px;
+  max-width:420px;
 }
 
 .hero-box{
@@ -71,7 +72,7 @@ nav a{
   font-size:14px;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
   padding:80px 10%;
 }
@@ -84,21 +85,19 @@ h2{
   color:#444;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:40px;
 }
 
-/* CARD TEXT */
 .card{
   color:#555;
   line-height:1.7;
   font-size:15px;
 }
 
-/* IMAGE BOX */
+/* IMAGE PLACEHOLDER */
 .img-box{
   width:100%;
   height:260px;
@@ -109,16 +108,17 @@ h2{
   color:#aaa;
 }
 
-/* SKILLS */
+/* TAGS */
 .skills span{
   display:inline-block;
   margin:5px;
   padding:6px 10px;
   border:1px solid #ddd;
   font-size:12px;
+  color:#444;
 }
 
-/* FLOAT CV */
+/* FLOAT CV BUTTON */
 .cv{
   position:fixed;
   right:20px;
@@ -128,6 +128,7 @@ h2{
   padding:12px 16px;
   font-size:12px;
   text-decoration:none;
+  border-radius:4px;
 }
 
 /* FOOTER */
@@ -137,32 +138,46 @@ footer{
   font-size:12px;
   color:#888;
 }
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .hero{
+    flex-direction:column;
+    text-align:left;
+  }
+}
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
 <a href="#about">ABOUT</a>
 <a href="#education">EDUCATION</a>
 <a href="#experience">EXPERIENCE</a>
 <a href="#projects">PROJECTS</a>
 <a href="#skills">SKILLS</a>
+<a href="#tools">TOOLS</a>
+<a href="#languages">LANGUAGES</a>
 <a href="#contact">CONTACT</a>
+<a href="#facts">FACTS</a>
+<a href="#gallery">GALLERY</a>
 </nav>
 
+<!-- FLOAT CV -->
 <a class="cv" href="Gayane_CV.pdf" download>DOWNLOAD CV</a>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
     <h1>Gayane<br>Haçik</h1>
-    <p>HR Systems & Analytics Specialist focused on building structured, data-driven HR processes and improving organizational efficiency through system design.</p>
+    <p>
+      HR Systems & People Analytics Specialist focused on HR digital transformation, system optimization, and data-driven decision-making in complex organizations.
+    </p>
   </div>
 
-  <div class="hero-box">
-    PHOTO
-  </div>
+  <div class="hero-box">PHOTO</div>
 </section>
 
 <!-- ABOUT -->
@@ -170,9 +185,8 @@ footer{
 <h2>ABOUT</h2>
 <div class="grid">
   <div class="card">
-    HR systems and analytics professional with an industrial engineering background. I focus on optimizing HR processes, improving data quality, and building scalable reporting structures.
+    Industrial Engineer specializing in HR systems, people analytics, and HR digital transformation. I focus on improving HR processes through system design, data analysis, and automation.
   </div>
-
   <div class="img-box">PHOTO</div>
 </div>
 </section>
@@ -182,7 +196,9 @@ footer{
 <h2>EDUCATION</h2>
 <div class="grid">
   <div class="card">
-    MSc HR Management – Dublin Business School (Ongoing)
+    MSc Human Resource Management – Dublin Business School (Ongoing)<br><br>
+    BSc Industrial Engineering – Marmara University<br>
+    Thesis: A Leanness Assessment Model and an Application
   </div>
   <div class="img-box">PHOTO</div>
 </div>
@@ -191,36 +207,91 @@ footer{
 <!-- EXPERIENCE -->
 <section id="experience">
 <h2>EXPERIENCE</h2>
+
 <div class="grid">
   <div class="card">
-    Senior HR Systems Development Specialist – Zorlu Holding<br><br>
-    Responsible for HR system optimization, reporting structures, and cross-functional HR-IT alignment.
+    <b>Senior HR Systems Development Specialist – Zorlu Holding</b><br><br>
+    HR systems consultant managing SAP SuccessFactors configuration, HR process implementation, performance module setup, and HR–IT alignment initiatives.<br><br>
+    Leading HR digital transformation projects including AI, RPA workshops, chatbot development, and vendor evaluations.
   </div>
   <div class="img-box">PHOTO</div>
 </div>
+
+<br><br>
+
+<div class="grid">
+  <div class="card">
+    <b>HR Analytics & Compensation Specialist – Zorlu Holding</b><br><br>
+    Managed HR reporting for 30,000+ employees, built Tableau dashboards, supported compensation cycles, and developed workforce analytics for executive decision-making.
+  </div>
+  <div class="img-box">PHOTO</div>
+</div>
+
+<br><br>
+
+<div class="grid">
+  <div class="card">
+    <b>HR Strategy Partner – CRS Soft</b><br><br>
+    Developed HR strategies using data analysis (Python), improved HR systems, and built university partnerships and talent programs.
+  </div>
+  <div class="img-box">PHOTO</div>
+</div>
+
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
 <h2>PROJECTS</h2>
+
 <div class="grid">
-  <div class="img-box">PROJECT IMAGE</div>
+  <div class="img-box">PROJECT</div>
   <div class="card">
-    HR Analytics Dashboard<br>
-    Built reporting structure for HR KPIs and workforce insights.
+    HR Analytics Dashboard (Power BI)<br>
+    Built structured HR KPI reporting and workforce analytics dashboards.
   </div>
 </div>
+
+<br>
+
+<div class="grid">
+  <div class="img-box">PROJECT</div>
+  <div class="card">
+    HR Process Automation<br>
+    Improved HR reporting workflows through structured data logic and automation design.
+  </div>
+</div>
+
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
 <h2>SKILLS</h2>
 <div class="skills">
-  <span>HR Systems</span>
+  <span>HR Systems Design</span>
   <span>People Analytics</span>
-  <span>Power BI</span>
-  <span>Process Design</span>
-  <span>Automation</span>
+  <span>Process Optimization</span>
+  <span>Data Analysis</span>
+  <span>HR Digital Transformation</span>
+  <span>Automation Thinking</span>
+</div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+<h2>TOOLS</h2>
+<div class="card">
+SAP SuccessFactors, SAP HR, Power BI, Tableau, Excel (Advanced), Power Query, Python (Basic)
+</div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages">
+<h2>LANGUAGES</h2>
+<div class="card">
+English – Advanced<br>
+German – C1 Advanced<br>
+Turkish – Native<br>
+Armenian – Native
 </div>
 </section>
 
@@ -229,8 +300,23 @@ footer{
 <h2>CONTACT</h2>
 <div class="card">
 Email: your@email.com<br>
-LinkedIn: your profile link
+LinkedIn: linkedin.com/in/gayane-hacik/<br>
+Medium: medium.com/@gayanehacik
 </div>
+</section>
+
+<!-- FACTS -->
+<section id="facts">
+<h2>FUN FACTS</h2>
+<div class="card">
+Interested in literature, philosophy, and storytelling. Curious about AI in organizations and human behavior in workplace systems.
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>GALLERY</h2>
+<div class="img-box">ADD IMAGES HERE</div>
 </section>
 
 <footer>
