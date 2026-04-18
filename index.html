@@ -1,201 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gayane Haçik | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gayane Haçik | CV</title>
 
-    nav {
-      position: fixed;
-      width: 100%;
-      background: rgba(15, 23, 42, 0.9);
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      z-index: 1000;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+  }
 
-    nav a {
-      color: #e2e8f0;
-      text-decoration: none;
-      margin-left: 15px;
-      font-size: 14px;
-    }
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+  }
 
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+  nav a {
+    color: #e2e8f0;
+    margin: 5px 10px;
+    font-size: 13px;
+    text-decoration: none;
+  }
 
-    h1, h2 {
-      color: #f8fafc;
-    }
+  nav a:hover {
+    color: #60a5fa;
+  }
 
-    .hero {
-      text-align: center;
-      padding-top: 120px;
-    }
+  section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+  }
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 10px 0;
-      border-radius: 10px;
-      transition: transform 0.2s;
-    }
+  h2 {
+    border-left: 3px solid #60a5fa;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+  .card {
+    background: #1e293b;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
+  .skills span {
+    display: inline-block;
+    background: #334155;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
 
-    .skills span {
-      background: #334155;
-      padding: 5px 10px;
-      margin: 5px;
-      display: inline-block;
-      border-radius: 5px;
-      font-size: 12px;
-    }
+  footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    opacity: 0.6;
+  }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-
-    @media(max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  /* spacing fix for fixed nav */
+  .spacer {
+    height: 60px;
+  }
+</style>
 </head>
 
 <body>
 
 <nav>
-  <div>Gayane Haçik</div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <a href="#bio">Bio</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#languages">Languages</a>
+  <a href="#programs">Programs</a>
+  <a href="#volunteer">Volunteer</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  <a href="#funfacts">Fun Facts</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#socials">Socials</a>
 </nav>
 
-<section class="hero">
-  <h1>Gayane Haçik</h1>
-  <p>HR Systems | Data | Analytics</p>
-  <p>Building smarter systems and meaningful insights.</p>
+<div class="spacer"></div>
+
+<!-- BIO -->
+<section id="bio">
+  <h2>Short Bio</h2>
+  <div class="card">
+    HR Systems & Analytics specialist focused on building efficient, data-driven HR processes. Interested in automation, AI applications in HR, and system optimization.
+  </div>
 </section>
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    Short bio here. Focus on what you do, what you care about,
-    and what makes you different.
-  </p>
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    Dublin Business School – MSc HR Management (Ongoing)
+  </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
-  <h2>Experience</h2>
-
+  <h2>Work Experience</h2>
   <div class="card">
-    <h3>Company Name</h3>
-    <p>Role | Year</p>
-    <p>Key achievement or responsibility.</p>
+    Senior HR Systems Development Specialist – Zorlu Holding
   </div>
-
-  <div class="card">
-    <h3>Another Company</h3>
-    <p>Role | Year</p>
-    <p>Impact-focused description.</p>
-  </div>
-
 </section>
 
+<!-- LANGUAGES -->
+<section id="languages">
+  <h2>Languages</h2>
+  <div class="card">
+    English – Fluent<br>
+    German – C1 Advanced<br>
+    Turkish – Fluent
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <h2>Programs</h2>
+  <div class="card">
+    SAP HR, Power BI, Tableau, Excel, Power Query
+  </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section id="volunteer">
+  <h2>Volunteer Experience</h2>
+  <div class="card">
+    Add your volunteer work here
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Project 1</h3>
-      <p>Short description.</p>
-    </div>
-
-    <div class="card">
-      <h3>Project 2</h3>
-      <p>Short description.</p>
-    </div>
+  <div class="card">
+    HR Dashboard (Power BI)<br>
+    Process automation in HR reporting
   </div>
-
 </section>
 
-<section>
+<!-- SKILLS -->
+<section id="skills">
   <h2>Skills</h2>
   <div class="skills">
-    <span>SAP</span>
-    <span>Python</span>
+    <span>HR Systems</span>
+    <span>Data Analysis</span>
+    <span>Automation</span>
     <span>Power BI</span>
-    <span>Tableau</span>
-    <span>HR Analytics</span>
+    <span>SAP</span>
   </div>
 </section>
 
-<section>
-  <h2>Gallery</h2>
-  <div class="grid gallery">
-    <img src="https://via.placeholder.com/400" onclick="openImage(this)">
-    <img src="https://via.placeholder.com/400" onclick="openImage(this)">
-  </div>
-</section>
-
-<section>
-  <h2>Fun Facts</h2>
-  <ul>
-    <li>Loves literature and philosophy</li>
-    <li>Dreams of visiting South America</li>
-    <li>Interested in filmmaking</li>
-  </ul>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>LinkedIn: your profile</p>
+  <div class="card">
+    Email: your@email.com
+  </div>
+</section>
+
+<!-- FUN FACTS -->
+<section id="funfacts">
+  <h2>Fun Facts</h2>
+  <div class="card">
+    Interested in filmmaking, literature, and philosophy. Loves structured thinking but also creative work.
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="card">
+    Add images here later (travel, events, personal work)
+  </div>
+</section>
+
+<!-- SOCIALS -->
+<section id="socials">
+  <h2>Social Links</h2>
+  <div class="card">
+    LinkedIn: add link<br>
+    Medium / Newsletter: add link
+  </div>
 </section>
 
 <footer>
-  © 2026 Your Name
+  © 2026 Gayane Haçik
 </footer>
-
-<script>
-  function openImage(img) {
-    window.open(img.src, '_blank');
-  }
-</script>
 
 </body>
 </html>
