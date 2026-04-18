@@ -3,23 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gayane Haçik | HR Systems & Analytics</title>
+<title>Gayane Haçik | Portfolio</title>
 
 <style>
-:root{
-  --bg:#0b0f17;
-  --card:#111827;
-  --text:#e5e7eb;
-  --muted:#9ca3af;
-  --accent:#60a5fa;
-}
-
 body{
   margin:0;
-  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
-  background:var(--bg);
-  color:var(--text);
-  scroll-behavior:smooth;
+  font-family: Arial, sans-serif;
+  background:#ffffff;
+  color:#111;
 }
 
 /* NAV */
@@ -27,223 +18,218 @@ nav{
   position:fixed;
   top:0;
   width:100%;
-  background:rgba(11,15,23,0.85);
-  backdrop-filter:blur(10px);
+  background:white;
   display:flex;
   justify-content:center;
-  flex-wrap:wrap;
-  padding:10px;
+  gap:20px;
+  padding:15px;
+  font-size:12px;
+  letter-spacing:1px;
+  border-bottom:1px solid #eee;
   z-index:1000;
 }
 
 nav a{
-  color:var(--muted);
-  margin:6px 10px;
-  font-size:12px;
   text-decoration:none;
+  color:#333;
 }
 
-nav a:hover{
-  color:var(--accent);
-}
-
-/* FLOATING BUTTON */
-.cv-float{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:var(--accent);
-  color:#0b0f17;
-  padding:12px 16px;
-  border-radius:999px;
-  font-size:13px;
-  font-weight:600;
-  text-decoration:none;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
-  z-index:2000;
-  transition:0.2s;
-}
-
-.cv-float:hover{
-  transform:translateY(-3px);
-}
-
-/* SECTIONS */
-section{
-  max-width:900px;
-  margin:auto;
-  padding:90px 20px;
-}
-
+/* HERO */
 .hero{
-  padding-top:140px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:140px 10% 80px;
+  gap:60px;
 }
 
-h1{
-  font-size:40px;
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:60px;
   margin:0;
+  font-weight:300;
 }
 
-.subtitle{
-  color:var(--accent);
-  margin-top:8px;
+.hero-text p{
+  color:#666;
+  font-size:16px;
+  line-height:1.6;
+  max-width:400px;
+}
+
+.hero-box{
+  width:320px;
+  height:320px;
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#aaa;
+  font-size:14px;
+}
+
+/* SECTION */
+section{
+  padding:80px 10%;
+}
+
+h2{
+  font-size:14px;
+  letter-spacing:2px;
+  font-weight:400;
+  margin-bottom:30px;
+  color:#444;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+/* CARD TEXT */
+.card{
+  color:#555;
+  line-height:1.7;
   font-size:15px;
 }
 
-p{
-  color:var(--muted);
-  line-height:1.6;
+/* IMAGE BOX */
+.img-box{
+  width:100%;
+  height:260px;
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#aaa;
 }
 
-.card{
-  background:var(--card);
-  padding:18px;
-  border-radius:14px;
-  margin-top:10px;
-}
-
-.tag{
+/* SKILLS */
+.skills span{
   display:inline-block;
-  background:#1f2937;
-  padding:6px 10px;
   margin:5px;
-  border-radius:999px;
+  padding:6px 10px;
+  border:1px solid #ddd;
   font-size:12px;
-  color:var(--muted);
 }
 
+/* FLOAT CV */
+.cv{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:black;
+  color:white;
+  padding:12px 16px;
+  font-size:12px;
+  text-decoration:none;
+}
+
+/* FOOTER */
 footer{
   text-align:center;
-  padding:40px;
+  padding:50px;
   font-size:12px;
-  color:var(--muted);
+  color:#888;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
-<a href="#home">Home</a>
-<a href="#bio">Bio</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#tools">Tools</a>
-<a href="#languages">Languages</a>
-<a href="#contact">Contact</a>
-<a href="#facts">Fun Facts</a>
-<a href="#gallery">Gallery</a>
+<a href="#about">ABOUT</a>
+<a href="#education">EDUCATION</a>
+<a href="#experience">EXPERIENCE</a>
+<a href="#projects">PROJECTS</a>
+<a href="#skills">SKILLS</a>
+<a href="#contact">CONTACT</a>
 </nav>
 
-<!-- FLOATING CV BUTTON -->
-<a class="cv-float" href="Gayane_CV.pdf" download>
-Download CV
-</a>
+<a class="cv" href="Gayane_CV.pdf" download>DOWNLOAD CV</a>
 
 <!-- HERO -->
-<section id="home" class="hero">
-<h1>Gayane Haçik</h1>
-<div class="subtitle">HR Systems & People Analytics Specialist</div>
-<p>
-I design and optimize HR systems that transform operational data into structured insights for better decision-making.
-Focused on HR analytics, automation, and scalable process design across complex organizations.
-</p>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Gayane<br>Haçik</h1>
+    <p>HR Systems & Analytics Specialist focused on building structured, data-driven HR processes and improving organizational efficiency through system design.</p>
+  </div>
+
+  <div class="hero-box">
+    PHOTO
+  </div>
 </section>
 
-<!-- BIO -->
-<section id="bio">
-<h2>Short Bio</h2>
-<div class="card">
-HR systems and analytics professional with an industrial engineering mindset.
-I work on improving HR processes through structured system design, data quality improvement, and automation of repetitive workflows.
+<!-- ABOUT -->
+<section id="about">
+<h2>ABOUT</h2>
+<div class="grid">
+  <div class="card">
+    HR systems and analytics professional with an industrial engineering background. I focus on optimizing HR processes, improving data quality, and building scalable reporting structures.
+  </div>
+
+  <div class="img-box">PHOTO</div>
 </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
-<h2>Education</h2>
-<div class="card">
-MSc HR Management – Dublin Business School (Ongoing)
-</div>
-<div class="card">
-Industrial Engineering – Bachelor’s Degree
+<h2>EDUCATION</h2>
+<div class="grid">
+  <div class="card">
+    MSc HR Management – Dublin Business School (Ongoing)
+  </div>
+  <div class="img-box">PHOTO</div>
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-<h2>Work Experience</h2>
-<div class="card">
-<b>Senior HR Systems Development Specialist – Zorlu Holding</b><br><br>
-Responsible for HR system optimization, process alignment between HR and IT, and improvement of data-driven HR reporting structures.
+<h2>EXPERIENCE</h2>
+<div class="grid">
+  <div class="card">
+    Senior HR Systems Development Specialist – Zorlu Holding<br><br>
+    Responsible for HR system optimization, reporting structures, and cross-functional HR-IT alignment.
+  </div>
+  <div class="img-box">PHOTO</div>
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2>Projects</h2>
-<div class="card">
-HR Analytics Dashboard – Designed reporting structure for HR KPIs and workforce insights.
-</div>
-<div class="card">
-Process Automation – Improved recurring HR reporting workflows through structured data logic.
+<h2>PROJECTS</h2>
+<div class="grid">
+  <div class="img-box">PROJECT IMAGE</div>
+  <div class="card">
+    HR Analytics Dashboard<br>
+    Built reporting structure for HR KPIs and workforce insights.
+  </div>
 </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-<h2>Skills</h2>
-<span class="tag">HR Systems Design</span>
-<span class="tag">People Analytics</span>
-<span class="tag">Process Optimization</span>
-<span class="tag">Automation Thinking</span>
-<span class="tag">Data Analysis</span>
-</section>
-
-<!-- TOOLS -->
-<section id="tools">
-<h2>Tools</h2>
-<div class="card">
-SAP HR, Power BI, Tableau, Excel (Advanced), Power Query, basic Python
-</div>
-</section>
-
-<!-- LANGUAGES -->
-<section id="languages">
-<h2>Languages</h2>
-<div class="card">
-English – Fluent<br>
-German – C1 Advanced<br>
-Turkish – Fluent
+<h2>SKILLS</h2>
+<div class="skills">
+  <span>HR Systems</span>
+  <span>People Analytics</span>
+  <span>Power BI</span>
+  <span>Process Design</span>
+  <span>Automation</span>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
+<h2>CONTACT</h2>
 <div class="card">
 Email: your@email.com<br>
 LinkedIn: your profile link
-</div>
-</section>
-
-<!-- FUN FACTS -->
-<section id="facts">
-<h2>Fun Facts</h2>
-<div class="card">
-Interested in literature, philosophy, and storytelling. Curious about how technology reshapes human behavior in organizations.
-Also interested in documentary filmmaking.
-</div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-<h2>Gallery</h2>
-<div class="card">
-Add travel, events, or personal visuals here.
 </div>
 </section>
 
